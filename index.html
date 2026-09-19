@@ -6,79 +6,276 @@
 <title>Русский гид в Ницце и Монако — Лара Лазари</title>
 <meta name="description" content="Индивидуальные экскурсии по Ницце, Монако и Лазурному берегу на русском языке с лицензированным гидом Ларой Лазари.">
 <style>
-:root{--ink:#18313b;--sea:#377d8b;--sand:#f6f0e6}
+:root{
+  --ink:#18313b;
+  --sea:#377d8b;
+  --sand:#f6f0e6;
+  --white:#fff;
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:var(--ink);line-height:1.6}
-h1,h2,h3{font-family:Georgia,serif;line-height:1.15}
-.wrap{max-width:1050px;margin:auto;padding:0 22px}
-header{padding:18px 0;border-bottom:1px solid #e8e3da}
-.nav{display:flex;justify-content:space-between;gap:20px}
-.brand{font-family:Georgia,serif;font-size:20px;font-weight:bold}
-.hero{padding:85px 0;background:linear-gradient(135deg,#edf7f7,#f8f0e3)}
-.eyebrow{letter-spacing:.13em;text-transform:uppercase;font-size:12px;color:var(--sea);font-weight:bold}
-.hero h1{font-size:clamp(40px,7vw,70px);max-width:780px;margin:12px 0 20px}
-.lead{font-size:20px;max-width:760px;color:#425b64}
-.btn{display:inline-block;padding:13px 20px;border-radius:999px;background:var(--ink);color:white;text-decoration:none;margin:12px 8px 0 0}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  color:var(--ink);
+  line-height:1.6;
+  background:#fff;
+}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.12}
+.wrap{max-width:1100px;margin:auto;padding:0 22px}
+
+header{
+  padding:17px 0;
+  border-bottom:1px solid #e8e3da;
+  background:white;
+}
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+.brand{
+  font-family:Georgia,serif;
+  font-size:21px;
+  font-weight:bold;
+}
+.place{font-size:14px;color:#60747b}
+
+/* HERO */
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  background:
+    linear-gradient(90deg,rgba(14,39,48,.88) 0%,rgba(14,39,48,.63) 48%,rgba(14,39,48,.15) 100%),
+    url("IMG_3460.jpeg") center/cover no-repeat;
+  color:white;
+}
+.hero-content{max-width:720px;padding:90px 0}
+.eyebrow{
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight:bold;
+  opacity:.9;
+}
+.hero h1{
+  font-size:clamp(43px,7vw,74px);
+  margin:14px 0 20px;
+}
+.lead{
+  font-size:20px;
+  max-width:680px;
+  color:#f3f7f7;
+}
+.btn{
+  display:inline-block;
+  padding:13px 21px;
+  border-radius:999px;
+  background:var(--ink);
+  color:white;
+  text-decoration:none;
+  margin:12px 8px 0 0;
+  font-weight:bold;
+}
 .btn.alt{background:var(--sea)}
-section{padding:68px 0}
-.intro{max-width:760px;font-size:18px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{border:1px solid #e6e2da;border-radius:18px;padding:25px;background:white}
-.card h3{font-size:24px;margin-top:0}
+.hero .btn{background:white;color:var(--ink)}
+.hero .btn.alt{background:var(--sea);color:white}
+
+section{padding:75px 0}
+section h2{font-size:38px;margin:0 0 28px}
+
+/* ABOUT */
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+.about-photo{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  border-radius:24px;
+}
+.intro{
+  font-size:18px;
+  color:#425b64;
+}
+
+/* TOURS */
+.tours{background:#faf9f6}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.card{
+  border-radius:20px;
+  background:white;
+  overflow:hidden;
+  box-shadow:0 5px 25px rgba(24,49,59,.08);
+}
+.card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  display:block;
+}
+.card-body{padding:24px}
+.card h3{
+  font-size:25px;
+  margin:0 0 12px;
+}
+.card p{color:#536970;margin-bottom:0}
+
+/* RIVIERA IMAGE */
+.riviera{
+  min-height:430px;
+  display:flex;
+  align-items:end;
+  background:
+    linear-gradient(0deg,rgba(15,42,50,.72),rgba(15,42,50,.05)),
+    url("276145BA-D79C-4BA0-9B65-36A492EFB81A.jpeg") center/cover no-repeat;
+  color:white;
+}
+.riviera-text{
+  padding:55px 0;
+  max-width:700px;
+}
+.riviera h2{margin-bottom:12px}
+
+/* WHY */
 .why{background:var(--sand)}
-.why .grid{grid-template-columns:repeat(4,1fr)}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.why-box{
+  background:white;
+  border-radius:18px;
+  padding:25px;
+}
+.why-box h3{font-size:21px;margin-top:0}
+.why-box p{margin-bottom:0;color:#536970}
+
+/* CONTACT */
 .contact{text-align:center}
-footer{padding:28px;text-align:center;color:#60747b;border-top:1px solid #eee}
-@media(max-width:760px){.grid,.why .grid{grid-template-columns:1fr}.hero{padding:58px 0}.hero h1{font-size:43px}}
+.contact p{
+  max-width:650px;
+  margin:0 auto 10px;
+  font-size:18px;
+  color:#536970;
+}
+.phone{margin-top:22px!important;color:var(--ink)!important}
+
+footer{
+  padding:30px 20px;
+  text-align:center;
+  color:#60747b;
+  border-top:1px solid #eee;
+  font-size:14px;
+}
+
+@media(max-width:760px){
+  .place{display:none}
+  .hero{
+    min-height:590px;
+    background:
+      linear-gradient(0deg,rgba(14,39,48,.82),rgba(14,39,48,.25)),
+      url("IMG_3460.jpeg") center/cover no-repeat;
+  }
+  .hero-content{padding:65px 0 45px}
+  .hero h1{font-size:45px}
+  .lead{font-size:18px}
+  section{padding:55px 0}
+  section h2{font-size:34px}
+  .about{grid-template-columns:1fr;gap:30px}
+  .about-photo{height:430px}
+  .grid,.why-grid{grid-template-columns:1fr}
+  .card img{height:260px}
+  .riviera{min-height:390px}
+}
 </style>
 </head>
 
 <body>
+
 <header>
 <div class="wrap nav">
-<div class="brand">Лара Лазари</div>
-<div>Ницца · Монако · Лазурный берег</div>
+  <div class="brand">Лара Лазари</div>
+  <div class="place">Ницца · Монако · Лазурный берег</div>
 </div>
 </header>
 
 <section class="hero">
 <div class="wrap">
-<div class="eyebrow">Лазурный берег • Франция • Монако</div>
-<h1>Русский гид в Ницце и Монако</h1>
-<p class="lead">Индивидуальные экскурсии по Французской Ривьере с лицензированным русскоязычным гидом. Ницца, Монако, Эз и автомобильные маршруты вдоль побережья.</p>
-<a class="btn" href="#tours">Посмотреть экскурсии</a>
-<a class="btn alt" href="https://wa.me/33760011324">Написать в WhatsApp</a>
+<div class="hero-content">
+  <div class="eyebrow">Лазурный берег • Франция • Монако</div>
+  <h1>Русский гид в Ницце и Монако</h1>
+  <p class="lead">Индивидуальные экскурсии по Французской Ривьере с лицензированным русскоязычным гидом. Ницца, Монако, Эз и самые красивые маршруты вдоль побережья.</p>
+  <a class="btn" href="#tours">Посмотреть экскурсии</a>
+  <a class="btn alt" href="https://wa.me/33760011324">Написать в WhatsApp</a>
+</div>
 </div>
 </section>
 
 <section>
-<div class="wrap">
-<h2>Здравствуйте, я Лара</h2>
-<p class="intro">Я лицензированный русскоязычный гид и много лет живу и работаю на Лазурном берегу. Мне важно не перечислять даты и имена, а показать место живым: его историю, характер, повседневную жизнь и детали, которые обычно остаются за пределами путеводителей.</p>
-<p class="intro">Провожу индивидуальные экскурсии для небольших компаний и семей. Маршрут можно адаптировать под ваш темп, интересы и время поездки.</p>
+<div class="wrap about">
+  <img class="about-photo" src="7722ACA8-760E-4765-8A24-1A293D5B93C0.png" alt="Лара Лазари — русский гид на Лазурном берегу">
+  <div>
+    <div class="eyebrow">Ваш гид на Лазурном берегу</div>
+    <h2>Здравствуйте, я Лара</h2>
+    <p class="intro">Я лицензированный русскоязычный гид и много лет живу и работаю на Лазурном берегу.</p>
+    <p class="intro">Мне важно не просто перечислять даты и имена, а показать место живым: его историю, характер, повседневную жизнь и детали, которые обычно остаются за пределами путеводителей.</p>
+    <p class="intro">Провожу индивидуальные экскурсии для небольших компаний и семей. Маршрут можно адаптировать под ваш темп, интересы и время поездки.</p>
+  </div>
 </div>
 </section>
 
-<section id="tours">
+<section class="tours" id="tours">
 <div class="wrap">
-<h2>Экскурсии</h2>
+<h2>Мои экскурсии</h2>
+
 <div class="grid">
 
 <div class="card">
-<h3>Ницца — с интересом и любовью</h3>
-<p>Старый город, Английская набережная, Cours Saleya и история города — от Савойи до современной Ривьеры.</p>
+  <img src="IMG_4382.jpeg" alt="Экскурсия по Ницце на русском языке">
+  <div class="card-body">
+    <h3>Ницца — с интересом и любовью</h3>
+    <p>Старый город, Английская набережная, Cours Saleya и история Ниццы — от Савойи до современной Ривьеры.</p>
+  </div>
 </div>
 
 <div class="card">
-<h3>Монако</h3>
-<p>Монако-Вилль, княжеская династия, Монте-Карло, казино и современная жизнь одного из самых необычных государств Европы.</p>
+  <img src="276145BA-D79C-4BA0-9B65-36A492EFB81A.jpeg" alt="Экскурсия по Монако на русском языке">
+  <div class="card-body">
+    <h3>Монако</h3>
+    <p>Монако-Вилль, княжеская династия, Монте-Карло, казино и современная жизнь одного из самых необычных государств Европы.</p>
+  </div>
 </div>
 
 <div class="card">
-<h3>Ницца и Монако на Tesla</h3>
-<p>Два главных места Лазурного берега за один день: Ницца, панорамная дорога, Вильфранш-сюр-Мер, Сен-Жан-Кап-Ферра и Монако.</p>
+  <img src="IMG_3428.jpeg" alt="Экскурсия Ницца и Монако на Tesla">
+  <div class="card-body">
+    <h3>Ницца и Монако на Tesla</h3>
+    <p>Два символа Лазурного берега за один день: Ницца, панорамная дорога, Вильфранш-сюр-Мер, Сен-Жан-Кап-Ферра и Монако.</p>
+  </div>
 </div>
 
+</div>
+</div>
+</section>
+
+<section class="riviera">
+<div class="wrap">
+<div class="riviera-text">
+  <div class="eyebrow">French Riviera</div>
+  <h2>Лазурный берег, который хочется запомнить</h2>
+  <p>От старых улочек Ниццы до панорам Монако — маршрут можно составить именно под вашу поездку.</p>
 </div>
 </div>
 </section>
@@ -86,30 +283,43 @@ footer{padding:28px;text-align:center;color:#60747b;border-top:1px solid #eee}
 <section class="why">
 <div class="wrap">
 <h2>Почему со мной</h2>
-<div class="grid">
 
-<div class="card"><h3>Лицензированный гид</h3><p>Профессиональное сопровождение и глубокое знание региона.</p></div>
-
-<div class="card"><h3>На русском языке</h3><p>Живой и понятный рассказ без ощущения лекции.</p></div>
-
-<div class="card"><h3>Индивидуально</h3><p>Небольшие компании, семьи и маршрут под ваши интересы.</p></div>
-
-<div class="card"><h3>Автомобильные маршруты</h3><p>Побережье и панорамные дороги Французской Ривьеры.</p></div>
-
+<div class="why-grid">
+  <div class="why-box">
+    <h3>Лицензированный гид</h3>
+    <p>Профессиональное сопровождение и глубокое знание региона.</p>
+  </div>
+  <div class="why-box">
+    <h3>На русском языке</h3>
+    <p>Живой и понятный рассказ без ощущения лекции.</p>
+  </div>
+  <div class="why-box">
+    <h3>Индивидуально</h3>
+    <p>Небольшие компании, семьи и маршрут под ваши интересы.</p>
+  </div>
+  <div class="why-box">
+    <h3>Автомобильные маршруты</h3>
+    <p>Панорамные дороги и красивые места Французской Ривьеры.</p>
+  </div>
 </div>
+
 </div>
 </section>
 
 <section class="contact">
 <div class="wrap">
-<h2>Обсудим вашу поездку?</h2>
-<p>Напишите мне даты, количество участников и что вам хотелось бы увидеть. Я предложу подходящий маршрут.</p>
-<a class="btn alt" href="https://wa.me/33760011324">WhatsApp</a>
-<a class="btn" href="mailto:lara.lazarri@gmail.com">Email</a>
-<p>+33 7 60 01 13 24</p>
+  <div class="eyebrow">Индивидуальная программа</div>
+  <h2>Обсудим вашу поездку?</h2>
+  <p>Напишите мне даты, количество участников и что вам хотелось бы увидеть. Я предложу подходящий маршрут.</p>
+  <a class="btn alt" href="https://wa.me/33760011324">Написать в WhatsApp</a>
+  <a class="btn" href="mailto:lara.lazarri@gmail.com">Email</a>
+  <p class="phone">+33 7 60 01 13 24</p>
 </div>
 </section>
 
-<footer>© 2026 Лара Лазари · Индивидуальные экскурсии по Лазурному берегу</footer>
+<footer>
+© 2026 Лара Лазари · Индивидуальные экскурсии по Ницце, Монако и Лазурному берегу
+</footer>
+
 </body>
 </html>
