@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Экскурсия по Монако на русском | Русский гид Лара Лазари</title>
+<title>Экскурсия из Ниццы в Монако на русском | Гид Лара Лазари</title>
 
-<meta name="description" content="Индивидуальная экскурсия по Монако на русском языке с лицензированным гидом Ларой Лазари. Княжеский дворец, Гримальди, Монте-Карло, казино, Грейс Келли и Mareterra.">
+<meta name="description" content="Индивидуальная экскурсия из Ниццы в Монако на русском языке. Вильфранш-сюр-Мер, Сен-Жан-Кап-Ферра, княжеская Скала, Монте-Карло и Mareterra. 4 часа, €400.">
 
 <meta name="robots" content="index,follow,max-image-preview:large">
 
@@ -14,8 +14,8 @@
 
 <meta property="og:locale" content="ru_RU">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Монако — история, роскошь и жизнь княжества | Лара Лазари">
-<meta property="og:description" content="Частная экскурсия по Монако на русском языке: от династии Гримальди и Монте-Карло до современного района Mareterra.">
+<meta property="og:title" content="Монако из Ниццы — индивидуальная экскурсия | Лара Лазари">
+<meta property="og:description" content="Из Ниццы в Монако по одной из самых красивых дорог Ривьеры: Вильфранш, Сен-Жан-Кап-Ферра, Monaco-Ville, Monte-Carlo и Mareterra.">
 <meta property="og:url" content="https://laralazarri.github.io/lara-riviera/monaco.html">
 <meta property="og:image" content="https://laralazarri.github.io/lara-riviera/45a64998-4595-4bc1-8fa9-231ea6412ff8.jpeg">
 
@@ -25,16 +25,15 @@
 {
   "@context":"https://schema.org",
   "@type":"TouristTrip",
-  "name":"Монако — история, роскошь и жизнь уникального княжества",
-  "description":"Индивидуальная экскурсия по Монако на русском языке с лицензированным гидом Ларой Лазари.",
+  "name":"Монако из Ниццы — история, роскошь и жизнь княжества",
+  "description":"Индивидуальная экскурсия из Ниццы в Монако на русском языке с лицензированным гидом Ларой Лазари.",
   "touristType":"Русскоязычные путешественники",
   "url":"https://laralazarri.github.io/lara-riviera/monaco.html",
   "image":"https://laralazarri.github.io/lara-riviera/45a64998-4595-4bc1-8fa9-231ea6412ff8.jpeg",
   "offers":{
     "@type":"Offer",
-    "price":"290",
-    "priceCurrency":"EUR",
-    "availability":"https://schema.org/InStock"
+    "price":"400",
+    "priceCurrency":"EUR"
   },
   "provider":{
     "@type":"Person",
@@ -129,11 +128,6 @@ nav a:hover{opacity:1}
  align-items:center;
 }
 
-.hero-copy{
- position:relative;
- z-index:2;
-}
-
 .hero h1{
  font-family:Georgia,"Times New Roman",serif;
  font-size:clamp(65px,9vw,125px);
@@ -171,7 +165,7 @@ nav a:hover{opacity:1}
  position:absolute;
  left:-25px;
  bottom:35px;
- width:235px;
+ width:245px;
  padding:22px;
  background:rgba(250,248,243,.96);
  border:1px solid var(--line);
@@ -197,7 +191,7 @@ nav a:hover{opacity:1}
  grid-template-columns:repeat(4,1fr);
  border-top:1px solid var(--line);
  border-bottom:1px solid var(--line);
- margin-bottom:120px;
+ margin-bottom:115px;
 }
 
 .info div{
@@ -228,10 +222,11 @@ nav a:hover{opacity:1}
  display:grid;
  grid-template-columns:.78fr 1.22fr;
  gap:90px;
- padding-bottom:120px;
+ padding-bottom:115px;
 }
 
 .intro h2,
+.road h2,
 .rock h2,
 .modern h2,
 .route h2{
@@ -256,6 +251,77 @@ nav a:hover{opacity:1}
  line-height:.72;
  padding:11px 10px 0 0;
  color:var(--blue);
+}
+
+/* ROAD */
+
+.road{
+ background:#ded8ce;
+ padding:110px 0;
+}
+
+.road-inner{
+ width:min(1180px,calc(100% - 40px));
+ margin:auto;
+}
+
+.road-head{
+ display:grid;
+ grid-template-columns:.72fr 1.28fr;
+ gap:85px;
+ margin-bottom:65px;
+}
+
+.road-head p{
+ max-width:680px;
+ font-size:18px;
+}
+
+.panorama{
+ margin-bottom:65px;
+}
+
+.panorama img{
+ height:620px;
+}
+
+.panorama figcaption,
+.road-card figcaption{
+ margin-top:10px;
+ color:var(--muted);
+ text-transform:uppercase;
+ letter-spacing:.14em;
+ font-size:9px;
+}
+
+.road-pair{
+ display:grid;
+ grid-template-columns:1.05fr .95fr;
+ gap:45px;
+}
+
+.road-card{
+ margin:0;
+}
+
+.road-card img{
+ height:500px;
+}
+
+.road-card:nth-child(2){
+ padding-top:85px;
+}
+
+.road-card h3{
+ font-family:Georgia,"Times New Roman",serif;
+ font-size:31px;
+ font-weight:400;
+ margin:22px 0 10px;
+}
+
+.road-card p{
+ font-size:16px;
+ max-width:510px;
 }
 
 /* ROCK */
@@ -290,22 +356,14 @@ nav a:hover{opacity:1}
  align-items:start;
 }
 
-.rock-grid figure{
- margin:0;
-}
+.rock-grid figure{margin:0}
 
 .rock-a img{height:610px}
 
-.rock-b{
- padding-top:100px;
-}
-
+.rock-b{padding-top:100px}
 .rock-b img{height:390px}
 
-.rock-c{
- padding-top:30px;
-}
-
+.rock-c{padding-top:30px}
 .rock-c img{height:500px}
 
 .dark-caption{
@@ -354,9 +412,7 @@ nav a:hover{opacity:1}
  margin:14px 0 25px;
 }
 
-.grace-copy p{
- font-size:17px;
-}
+.grace-copy p{font-size:17px}
 
 /* MONTE CARLO */
 
@@ -389,9 +445,8 @@ nav a:hover{opacity:1}
  gap:20px;
 }
 
-.monte-main img{
- height:620px;
-}
+.monte-main{margin:0}
+.monte-main img{height:620px}
 
 .monte-side{
  display:grid;
@@ -399,9 +454,8 @@ nav a:hover{opacity:1}
  gap:20px;
 }
 
-.monte-side img{
- height:300px;
-}
+.monte-side figure{margin:0}
+.monte-side img{height:300px}
 
 .caption{
  margin-top:10px;
@@ -452,16 +506,10 @@ nav a:hover{opacity:1}
  display:grid;
  grid-template-columns:.8fr 1.2fr;
  gap:20px;
- align-items:start;
 }
 
-.mareterra-grid img:first-child{
- height:400px;
-}
-
-.mareterra-grid img:last-child{
- height:520px;
-}
+.mareterra-grid img:first-child{height:400px}
+.mareterra-grid img:last-child{height:520px}
 
 .modern-copy{
  display:grid;
@@ -476,9 +524,7 @@ nav a:hover{opacity:1}
  line-height:1.45;
 }
 
-.modern-copy .text{
- font-size:17px;
-}
+.modern-copy .text{font-size:17px}
 
 /* QUOTE */
 
@@ -554,7 +600,7 @@ nav a:hover{opacity:1}
 }
 
 .book p{
- max-width:610px;
+ max-width:640px;
  margin:0 auto 30px;
  font-size:17px;
 }
@@ -585,10 +631,7 @@ footer{
 
 @media(max-width:820px){
 
- .page{
-   width:min(100% - 28px,1180px);
- }
-
+ .page{width:min(100% - 28px,1180px)}
  header{height:72px}
  nav{display:none}
 
@@ -602,19 +645,13 @@ footer{
    font-size:clamp(70px,22vw,100px);
  }
 
- .hero-visual{
-   min-height:535px;
- }
-
- .hero-main{
-   width:92%;
-   height:510px;
- }
+ .hero-visual{min-height:535px}
+ .hero-main{width:92%;height:510px}
 
  .hero-card{
    left:0;
    bottom:5px;
-   width:205px;
+   width:215px;
    padding:17px;
  }
 
@@ -637,13 +674,28 @@ footer{
    padding-bottom:80px;
  }
 
- .intro-text{
-   font-size:18px;
- }
+ .intro-text{font-size:18px}
 
- .rock{
+ .road{
    padding:75px 0;
  }
+
+ .road-head{
+   grid-template-columns:1fr;
+   gap:25px;
+ }
+
+ .panorama img{height:430px}
+
+ .road-pair{
+   grid-template-columns:1fr;
+   gap:45px;
+ }
+
+ .road-card:nth-child(2){padding-top:0}
+ .road-card img{height:420px}
+
+ .rock{padding:75px 0}
 
  .rock-head{
    grid-template-columns:1fr;
@@ -655,21 +707,12 @@ footer{
    gap:11px;
  }
 
- .rock-a{
-   grid-column:1/-1;
- }
-
+ .rock-a{grid-column:1/-1}
  .rock-a img{height:470px}
 
- .rock-b,
- .rock-c{
-   padding-top:0;
- }
+ .rock-b,.rock-c{padding-top:0}
 
- .rock-b img,
- .rock-c img{
-   height:260px;
- }
+ .rock-b img,.rock-c img{height:260px}
 
  .grace{
    grid-template-columns:1fr;
@@ -677,21 +720,15 @@ footer{
    padding:80px 0;
  }
 
- .grace-photo img{
-   height:500px;
- }
+ .grace-photo img{height:500px}
 
- .monte{
-   padding:75px 0;
- }
+ .monte{padding:75px 0}
 
  .monte-gallery{
    grid-template-columns:1fr;
  }
 
- .monte-main img{
-   height:460px;
- }
+ .monte-main img{height:460px}
 
  .monte-side{
    grid-template-columns:1fr 1fr;
@@ -699,13 +736,9 @@ footer{
    gap:11px;
  }
 
- .monte-side img{
-   height:250px;
- }
+ .monte-side img{height:250px}
 
- .modern{
-   padding:85px 0 75px;
- }
+ .modern{padding:85px 0 75px}
 
  .modern-head{
    grid-template-columns:1fr;
@@ -713,13 +746,9 @@ footer{
    margin-bottom:45px;
  }
 
- .mareterra-hero img{
-   height:470px;
- }
+ .mareterra-hero img{height:470px}
 
- .mareterra-grid{
-   gap:11px;
- }
+ .mareterra-grid{gap:11px}
 
  .mareterra-grid img:first-child,
  .mareterra-grid img:last-child{
@@ -732,26 +761,18 @@ footer{
    margin-top:45px;
  }
 
- .modern-copy .big{
-   font-size:25px;
- }
+ .modern-copy .big{font-size:25px}
 
- .quote{
-   padding:70px 24px;
- }
+ .quote{padding:70px 24px}
 
- .route{
-   padding:80px 0;
- }
+ .route{padding:80px 0}
 
  .route-grid{
    grid-template-columns:1fr;
    gap:35px;
  }
 
- .book{
-   padding:85px 0;
- }
+ .book{padding:85px 0}
 
  footer{
    flex-direction:column;
@@ -770,20 +791,17 @@ footer{
 
 <header>
 
-<a class="brand" href="index.html">
-Lara Lazarri
-</a>
+<a class="brand" href="index.html">Lara Lazarri</a>
 
 <nav>
 <a href="index.html">Главная</a>
-<a href="#monaco">О Монако</a>
+<a href="#road">Дорога</a>
+<a href="#monaco">Монако</a>
 <a href="#mareterra">Mareterra</a>
 <a href="#route">Маршрут</a>
 </nav>
 
-<a class="back" href="index.html">
-← Riviera
-</a>
+<a class="back" href="index.html">← Riviera</a>
 
 </header>
 
@@ -795,18 +813,18 @@ Lara Lazarri
 <div class="hero-copy">
 
 <div class="eyebrow">
-Principauté de Monaco · visite privée
+Nice → Monaco · private journey
 </div>
 
 <h1>
 Монако
-<em>изнутри.</em>
+<em>из Ниццы.</em>
 </h1>
 
 <p>
-История, династия Гримальди, Monte-Carlo,
-архитектура, экономика и жизнь государства,
-которое занимает всего несколько квадратных километров.
+Индивидуальная экскурсия в княжество Монако —
+с красивой дорогой вдоль моря, панорамами Ривьеры,
+историей Гримальди, Monte-Carlo и Монако XXI века.
 </p>
 
 </div>
@@ -817,15 +835,15 @@ Principauté de Monaco · visite privée
 <img
 class="hero-main"
 src="45a64998-4595-4bc1-8fa9-231ea6412ff8.jpeg"
-alt="Панорама княжества Монако с высоты">
+alt="Панорама княжества Монако">
 
 <div class="hero-card">
-Как крошечному княжеству удалось стать
-одним из самых узнаваемых государств мира?
+Не просто трансфер в Монако —
+путешествие начинается уже по дороге из Ниццы.
 </div>
 
 <div class="hero-vertical">
-Monaco · Monte-Carlo · Méditerranée
+Nice · Monaco · Méditerranée
 </div>
 
 </div>
@@ -837,12 +855,12 @@ Monaco · Monte-Carlo · Méditerranée
 
 <div>
 <small>Продолжительность</small>
-<strong>около 2,5 часов</strong>
+<strong>около 4 часов</strong>
 </div>
 
 <div>
-<small>Формат</small>
-<strong>индивидуально</strong>
+<small>Выезд</small>
+<strong>из Ниццы</strong>
 </div>
 
 <div>
@@ -852,50 +870,46 @@ Monaco · Monte-Carlo · Méditerranée
 
 <div>
 <small>Стоимость</small>
-<strong>€290</strong>
+<strong>€400</strong>
 </div>
 
 </section>
 
 
-<section class="intro" id="monaco">
+<section class="intro">
 
 <div>
 
 <div class="eyebrow">
-Deux kilomètres carrés
+De Nice à Monaco
 </div>
 
 <h2>
-Маленькая территория. Большая история.
+Экскурсия начинается ещё до границы
 </h2>
 
 </div>
 
-
 <div class="intro-text">
 
 <p>
-Монако занимает совсем небольшую территорию,
-но его история удивительно насыщенна:
-династия Гримальди, борьба за независимость,
-княжеский двор, Monte-Carlo, казино,
-Формула-1 и совершенно особенная модель жизни.
+Монако — цель нашего путешествия, но дорога туда
+сама по себе заслуживает отдельного рассказа.
+Из Ниццы мы отправимся вдоль Средиземного моря,
+останавливаясь на панорамных площадках,
+откуда открывается совсем другая Ривьера.
 </p>
 
 <p>
-Начнём на Скале — в историческом сердце княжества.
-Затем перенесёмся в совершенно другой мир:
-парадный Monte-Carlo с его архитектурой,
-отелями и легендарной площадью Casino.
+Вильфранш-сюр-Мер, Сен-Жан-Кап-Ферра,
+история русских на побережье, старый военный порт,
+знаменитые виллы и люди, которые выбирали
+эти места для жизни.
 </p>
 
 <p>
-Но моя экскурсия не заканчивается рассказом
-о князьях и роскоши. Мне интересно показать,
-как Монако работает сегодня: кто здесь живёт,
-как развивается территория и почему каждый
-новый квадратный метр имеет огромное значение.
+А затем — граница и совершенно другой мир:
+княжество Монако.
 </p>
 
 </div>
@@ -907,7 +921,103 @@ Deux kilomètres carrés
 </div>
 
 
-<section class="rock">
+<section class="road" id="road">
+
+<div class="road-inner">
+
+<div class="road-head">
+
+<div>
+
+<div class="eyebrow">
+La route du bord de mer
+</div>
+
+<h2>
+Одна из самых красивых дорог Ривьеры
+</h2>
+
+</div>
+
+<p>
+Направляясь в карликовое княжество,
+мы проедем вдоль моря и увидим побережье с высоты.
+Здесь расстояния небольшие, но за несколько километров
+история и характер мест меняются удивительно сильно.
+</p>
+
+</div>
+
+
+<figure class="panorama">
+
+<img
+src="IMG_3243.jpeg"
+alt="Панорамная дорога между Ниццей и Монако">
+
+<figcaption>
+Nice → Monaco · la Côte d’Azur vue d’en haut
+</figcaption>
+
+</figure>
+
+
+<div class="road-pair">
+
+<figure class="road-card">
+
+<img
+src="65A75880-2FE2-4B68-867A-B48544DDC379.jpeg"
+alt="Панорама Вильфранш-сюр-Мер">
+
+<h3>Вильфранш-сюр-Мер</h3>
+
+<p>
+С высоты перед нами откроется один из самых красивых
+заливов побережья. Здесь я расскажу,
+как развивался военный порт Вильфранша
+и почему именно с этим местом связаны важные страницы
+русской истории на Французской Ривьере.
+</p>
+
+<figcaption>
+Villefranche-sur-Mer · la rade
+</figcaption>
+
+</figure>
+
+
+<figure class="road-card">
+
+<img
+src="IMG_7513.jpeg"
+alt="Панорама Сен-Жан-Кап-Ферра">
+
+<h3>Сен-Жан-Кап-Ферра</h3>
+
+<p>
+Следующая панорама — знаменитый полуостров,
+который сегодня ассоциируется с виллами
+и одной из самых престижных недвижимостей Ривьеры.
+Поговорим о том, как менялся Сен-Жан-Кап-Ферра
+и какой след здесь оставили Жан Кокто
+и Беатрис Эфрусси де Ротшильд.
+</p>
+
+<figcaption>
+Saint-Jean-Cap-Ferrat · la presqu’île
+</figcaption>
+
+</figure>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="rock" id="monaco">
 
 <div class="rock-inner">
 
@@ -920,17 +1030,17 @@ Le Rocher · Monaco-Ville
 </div>
 
 <h2>
-Сначала была Скала
+И вот — Монако
 </h2>
 
 </div>
 
 <p>
-Именно здесь начинается история княжества.
-Узкие улицы Monaco-Ville, Княжеский дворец,
-смена караула и Средиземное море вокруг —
-совсем другое Монако, далёкое от образа казино
-и суперкаров.
+Пересекаем границу и оказываемся
+в одном из самых маленьких государств мира.
+Начнём со Скалы — исторического сердца княжества:
+династии Гримальди, Княжеского дворца
+и старого Monaco-Ville.
 </p>
 
 </div>
@@ -968,7 +1078,7 @@ Musée Océanographique
 
 <img
 src="d6fa5859-8b59-45db-a3c9-ddf1ff912714.jpeg"
-alt="Монако и Средиземное море">
+alt="Княжество Монако">
 
 <figcaption class="dark-caption">
 Principauté de Monaco
@@ -991,7 +1101,7 @@ Principauté de Monaco
 
 <img
 src="IMG_7282.jpeg"
-alt="Первая встреча Грейс Келли и князя Ренье III">
+alt="Грейс Келли и князь Ренье III">
 
 </div>
 
@@ -1003,22 +1113,19 @@ Grace & Rainier
 </div>
 
 <h2>
-История, которая изменила образ Монако
+История, которая изменила образ княжества
 </h2>
 
 <p>
 Грейс Келли приехала в Монако как голливудская звезда,
 а стала княгиней Грейс. Её история с князем Ренье III
-оказалась не только одной из самых известных
-королевских историй XX века, но и частью нового
-международного образа княжества.
+стала частью нового международного образа Монако.
 </p>
 
 <p>
-Поговорим о семье Гримальди, свадьбе,
+Поговорим о семье Гримальди,
 жизни княжеской семьи и о том,
-почему эта история до сих пор остаётся
-неотделимой от Монако.
+как во второй половине XX века менялось само княжество.
 </p>
 
 </div>
@@ -1043,10 +1150,9 @@ Monte-Carlo
 </h2>
 
 <p>
-Здесь Монако создаёт тот самый образ,
-который знает весь мир: Casino de Monte-Carlo,
-Hôtel de Paris, архитектура Belle Époque
-и сегодняшняя сверхдорогая недвижимость.
+Совсем другое Монако: легендарное Casino de Monte-Carlo,
+Hôtel de Paris, архитектура Belle Époque,
+Формула-1 и современная недвижимость.
 </p>
 
 </div>
@@ -1116,18 +1222,17 @@ Monaco · XXIe siècle
 </div>
 
 <h2>
-Mareterra — город выходит в море
+Mareterra — когда город выходит в море
 </h2>
 
 </div>
 
-
 <div>
 
 <p>
-Одной из изюминок нашей программы станет
-Mareterra — новейший экорайон Монако,
-созданный прямо на море.
+Одной из изюминок программы станет Mareterra —
+новейший район Монако, созданный на территории,
+отвоёванной у моря.
 </p>
 
 <p>
@@ -1149,7 +1254,7 @@ src="IMG_7287.jpeg"
 alt="Новый район Mareterra в Монако">
 
 <div class="mareterra-label">
-Mareterra · новая территория Монако
+Mareterra · Monaco XXIe siècle
 </div>
 
 </div>
@@ -1159,11 +1264,11 @@ Mareterra · новая территория Монако
 
 <img
 src="IMG_4575.jpeg"
-alt="Архитектура Mareterra в Монако">
+alt="Архитектура района Mareterra">
 
 <img
 src="IMG_7291.jpeg"
-alt="Экорайон Mareterra на Средиземном море">
+alt="Mareterra и Средиземное море">
 
 </div>
 
@@ -1171,33 +1276,31 @@ alt="Экорайон Mareterra на Средиземном море">
 <div class="modern-copy">
 
 <div class="big">
-Как построить новый район там,
-где практически закончилась земля?
+Что делать государству,
+если свободная земля практически закончилась?
 </div>
 
 <div class="text">
 
 <p>
-Мы разберёмся, как у моря создали новую территорию,
+Разберёмся, как у моря создали новую территорию,
 какие инженерные решения использовали
-и почему при реализации проекта такое внимание
+и почему при реализации проекта особое внимание
 уделялось морской экосистеме.
 </p>
 
 <p>
 Отдельно поговорим о защите морского
-<strong>биоразнообразия</strong>: задача заключалась
-не только в снижении воздействия строительства,
-но и в создании условий для сохранения
-и развития морской жизни.
+<strong>биоразнообразия</strong> и о мерах,
+направленных на снижение воздействия строительства
+и создание условий для морской жизни.
 </p>
 
 <p>
-Именно здесь становится особенно интересно
-посмотреть на Монако шире: как развивается государство
-при практически полном отсутствии свободной земли,
-какую роль играют недвижимость, международный капитал,
-расширение территории и экологическая политика.
+А затем посмотрим шире: как связаны между собой
+расширение территории, недвижимость,
+международный капитал и стратегия развития
+одного из самых маленьких государств мира.
 </p>
 
 </div>
@@ -1212,9 +1315,9 @@ alt="Экорайон Mareterra на Средиземном море">
 <section class="quote">
 
 <blockquote>
-«Монако интересно не только тем, сколько здесь стоит квадратный метр,
-а тем, как несколько квадратных километров превратились
-в работающую модель государства».
+«Мне интересно показать не только роскошное Монако,
+но и понять вместе с вами, как устроено
+и развивается это необычное государство».
 </blockquote>
 
 </section>
@@ -1229,16 +1332,16 @@ alt="Экорайон Mareterra на Средиземном море">
 <div>
 
 <div class="eyebrow">
-Notre promenade
+Nice → Monaco
 </div>
 
 <h2>
-Что увидим
+Наш маршрут
 </h2>
 
 <p>
-Историческое Монако постепенно сменится
-Monte-Carlo, а затем княжеством XXI века.
+Около четырёх часов — от панорам Ривьеры
+до исторического и современного Монако.
 </p>
 
 </div>
@@ -1249,40 +1352,40 @@ Monte-Carlo, а затем княжеством XXI века.
 <div class="stop">
 <span>01</span>
 <div>
-<strong>Monaco-Ville</strong>
-Исторические улицы княжества и история Гримальди.
+<strong>Выезд из Ниццы</strong>
+Начинаем путешествие вдоль Средиземного моря.
 </div>
 </div>
 
 <div class="stop">
 <span>02</span>
 <div>
-<strong>Княжеский дворец</strong>
-Династия, государство и жизнь княжеской семьи.
+<strong>Вильфранш-сюр-Мер</strong>
+Панорама бухты, военный порт и русская история Ривьеры.
 </div>
 </div>
 
 <div class="stop">
 <span>03</span>
 <div>
-<strong>Океанографический музей</strong>
-Море, наука и наследие князя Альбера I.
+<strong>Сен-Жан-Кап-Ферра</strong>
+Полуостров знаменитых вилл, Жан Кокто и Беатрис Эфрусси де Ротшильд.
 </div>
 </div>
 
 <div class="stop">
 <span>04</span>
 <div>
-<strong>Monte-Carlo</strong>
-Casino, Hôtel de Paris и архитектура знаменитой площади.
+<strong>Monaco-Ville</strong>
+Княжеская Скала, дворец и история династии Гримальди.
 </div>
 </div>
 
 <div class="stop">
 <span>05</span>
 <div>
-<strong>Формула-1</strong>
-Город, который раз в году превращается в гоночную трассу.
+<strong>Monte-Carlo</strong>
+Casino, Hôtel de Paris и легендарная трасса Формулы-1.
 </div>
 </div>
 
@@ -1290,7 +1393,7 @@ Casino, Hôtel de Paris и архитектура знаменитой площ�
 <span>06</span>
 <div>
 <strong>Mareterra</strong>
-Новейший район на море, инженерия, недвижимость и биоразнообразие.
+Монако XXI века: новая территория, архитектура и биоразнообразие.
 </div>
 </div>
 
@@ -1304,17 +1407,19 @@ Casino, Hôtel de Paris и архитектура знаменитой площ�
 <section class="book" id="book">
 
 <div class="eyebrow">
-Votre visite à Monaco
+Votre journée à Monaco
 </div>
 
 <h2>
-Откроем Монако вместе.
+Из Ниццы — в Монако.
 </h2>
 
 <p>
-Экскурсия проходит индивидуально на русском языке.
-Напишите мне дату поездки и количество участников —
-я лично отвечу и подтвержу свободное время.
+Индивидуальная экскурсия на русском языке.
+Около 4 часов, до 4 человек — €400.
+Выезжаем из Ниццы и возвращаемся после экскурсии.
+Напишите мне дату поездки — я лично отвечу
+и подтвержу свободное время.
 </p>
 
 <a class="btn dark"
