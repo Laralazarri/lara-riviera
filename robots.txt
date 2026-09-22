@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://laralazarri.github.io/lara-riviera/sitemap.xml
+Sitemap: https://lara-riviera.fr/sitemap.xml
